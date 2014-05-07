@@ -14,7 +14,7 @@
 static NSUInteger const kNumberOfColumns = 3;
 static NSUInteger const kItemSpacing = 5.0;
 static NSUInteger const kNumberOfSections = 5;
-static NSUInteger const kNumberItemsPerSection = 10;
+static NSUInteger const kNumberItemsPerSection = 100;
 @interface CollectionViewManager()
 @property (strong,nonatomic) UINib *cellNib;
 @property (strong,nonatomic) UINib *sectionHeaderNib;

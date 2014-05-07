@@ -29,6 +29,19 @@
     [super viewDidLoad];
     self.collectionView.contentInset=UIEdgeInsetsMake(20, 0, 0, 0);
     self.collectionViewManager.collectionView=self.collectionView;
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Scroll To Top" style:UIBarButtonItemStyleBordered target:self action:@selector(scrollToTop)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Scroll To Bottom" style:UIBarButtonItemStyleBordered target:self action:@selector(scrollTobottom)];
+}
+
+-(void)scrollToTop
+{
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0] atScrollPosition:UICollectionViewScrollPositionBottom animated:YES];
+}
+
+-(void)scrollTobottom
+{
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:2] atScrollPosition:UICollectionViewScrollPositionBottom animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
