@@ -41,7 +41,7 @@
 
 -(void)scrollTobottom
 {
-    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:2] atScrollPosition:UICollectionViewScrollPositionBottom animated:YES];
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:99 inSection:4] atScrollPosition:UICollectionViewScrollPositionBottom animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
